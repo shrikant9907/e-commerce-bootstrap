@@ -10,76 +10,340 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      .mega-menu {
+        display: none
+      }
+
+      .mega-menu a.text-black:hover {
+        color: blue !important;
+      }
+
+      .category-menu-wr:hover  .mega-menu { 
+        display: block;
+       }
+
+      .list-sub-menu {
+        min-width: 300px;
+      }
+
+      .category-item-2:hover .list-sub-menu {
+        display: block !important;
+      }
+    </style>
   </head>
   <body>
-      
     <!-- Header Start -->
     <header class="border-bottom sticky-top start-0 end-0">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Brand and Logo  -->
+          <a class="navbar-brand pt-0" href="#">
+            <img src="./assets/svg/app-logo.svg" alt="App Logo" width="100" />
+          </a>
 
-              <!-- Brand and Logo  -->
-              <a class="navbar-brand pt-0" href="#">
-                <img src="./assets/svg/app-logo.svg" alt="App Logo" width="100" />
-              </a>
+          <!-- Mobile Menu Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- Header Navigations -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item category-menu-wr">
+                <a class="nav-link" href="#">Categories</a>
 
-              <!-- Mobile Menu Toggle Button -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-
-                <!-- Header Navigations -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Categories</a>
-                  </li>
-                </ul>
-
-                <!-- Basic Search Form Header -->
-                <form class="d-flex bg-white w-50" role="search">
-                  <div class="input-group">
-                    <input type="search" class="form-control" aria-label="Search" placeholder="Search">
-                    <button type="button"  class="input-group-text bg-transparent"><i class="bi bi-search"></i></button>
+                <!-- Mega menu category -->
+                <div class="mega-menu start-0 end-0 position-fixed z-3   py-5 bg-body-tertiary">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <h4 class="fs-5">Lorem Ipsum Category</h4>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h4 class="fs-5">Lorem Ipsum Category</h4>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h4 class="fs-5">Lorem Ipsum Category</h4>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                          <li class="list-group-item ps-0 bg-body-tertiary">
+                            <a
+                              class="text-decoration-none text-black"
+                              href="product-list.html"
+                              >Hampden-Sydney College</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="col align-items-center justify-content-center"
+                      >
+                        <img
+                          class="w-100 mb-3"
+                          src="./assets/images/photo-categories.avif"
+                          alt=""
+                        />
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.tetur, veritatis enim illo asperiores minima at.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </form>
-
-                <!-- Header Right Side Actions -->
-                <div class="d-flex gap-3 ms-3">
-                    <i class="bi bi-heart-fill"></i>
-                    <i class="bi bi-cart"></i>
-                    <i class="bi bi-box-arrow-in-left"></i> 
                 </div>
+              </li>
 
-                <!-- Login / Signup Buttons -->
-                 <!-- Hide this if user already loggedin -->
-                <div class="d-flex gap-3 ms-3">
-                  <a href="login.html" class="btn btn-success">Login</a>
-                  <a href="signup.html" class="btn btn-outline-success">Signup</a>
+              <li class="nav-item category-item-2 position-relative">
+                <a class="nav-link">Category 2</a>
+                <div class="list-sub-menu shadow-lg position-absolute d-none">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-body-tertiary">
+                      <a
+                        class="text-decoration-none text-black"
+                        href="product-list.html"
+                        >Hampden-Sydney College</a
+                      >
+                    </li>
+                    <li class="list-group-item bg-body-tertiary">
+                      <a
+                        class="text-decoration-none text-black"
+                        href="product-list.html"
+                        >Hampden-Sydney College</a
+                      >
+                    </li>
+                    <li class="list-group-item bg-body-tertiary">
+                      <a
+                        class="text-decoration-none text-black"
+                        href="product-list.html"
+                        >Hampden-Sydney College</a
+                      >
+                    </li>
+                    <li class="list-group-item bg-body-tertiary">
+                      <a
+                        class="text-decoration-none text-black"
+                        href="product-list.html"
+                        >Hampden-Sydney College</a
+                      >
+                    </li>
+                    <li class="list-group-item bg-body-tertiary">
+                      <a
+                        class="text-decoration-none text-black"
+                        href="product-list.html"
+                        >Hampden-Sydney College</a
+                      >
+                    </li>
+                    <li class="list-group-item bg-body-tertiary">
+                      <a
+                        class="text-decoration-none text-black"
+                        href="product-list.html"
+                        >Hampden-Sydney College</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </li>
+            </ul>
 
-                <!-- My Account -->
-                <!-- Enable this if the user already loggedin: remove the d-none class to show this -->
-                <a href="my-account.html" class="ms-3 btn btn-success d-none">My Account</a>
+            <!-- Basic Search Form Header -->
+            <form class="d-flex bg-white w-50" role="search">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control"
+                  aria-label="Search"
+                  placeholder="Search"
+                />
+                <button type="button" class="input-group-text bg-transparent">
+                  <i class="bi bi-search"></i>
+                </button>
               </div>
+            </form>
+
+            <!-- Header Right Side Actions -->
+            <div class="d-flex gap-3 ms-3">
+              <i class="bi bi-heart-fill"></i>
+              <i class="bi bi-cart"></i>
+              <i class="bi bi-box-arrow-in-left"></i>
             </div>
-          </nav>
+
+            <!-- Login / Signup Buttons -->
+            <!-- Hide this if user already loggedin -->
+            <div class="d-flex gap-3 ms-3">
+              <a
+                class="text-decoration-none text-black"
+                href="login.html"
+                class="btn btn-success"
+                >Login</a
+              >
+              <a
+                class="text-decoration-none text-black"
+                href="signup.html"
+                class="btn btn-outline-success"
+                >Signup</a
+              >
+            </div>
+
+            <!-- My Account -->
+            <!-- Enable this if the user already loggedin: remove the d-none class to show this -->
+            <a
+              class="text-decoration-none text-black"
+              href="my-account.html"
+              class="ms-3 btn btn-success d-none"
+              >My Account</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Header End -->
 
-    <div class="container">
-       
-    </div>
 
-    <footer class="sticky-bottom start-0 end-0 bg-white py-3 px-3 text-center border-top">
+
+    <div class="container"></div>
+
+    <!-- <footer
+      class="sticky-bottom start-0 end-0 bg-white py-3 px-3 text-center border-top"
+    >
       Footer
-    </footer>
- 
+    </footer> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
