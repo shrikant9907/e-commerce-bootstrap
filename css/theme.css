@@ -1,0 +1,25 @@
+
+:root {
+    --primary-color: #FC4100;
+    --primary-hover-color: #C40C0C;
+  }
+
+  /* Theme Coloring */
+  .text-primary {
+    color: var(--primary-color) !important;
+  }
+
+  .btn-primary,
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
+
+  .border-primary,
+  .btn-primary {
+    border-color: var(--primary-color) !important;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-hover-color);
+    border-color: var(--primary-hover-color);
+  }
