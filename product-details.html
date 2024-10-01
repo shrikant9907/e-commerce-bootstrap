@@ -20,33 +20,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <style>
-      .mega-menu {
-        display: none;
-      }
-
-      .mega-menu a.text-black:hover {
-        color: blue !important;
-      }
-
-      .category-menu-wr:hover .mega-menu {
-        display: block;
-      }
-
-      .list-sub-menu {
-        min-width: 300px;
-      }
-
-      .category-item-2:hover .list-sub-menu {
-        display: block !important;
-      }
-
-      @media all and (min-width: 1200px) {
-        .row .col-20 {
-          width: 20% !important;
-        }
-      }
-    </style>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/product-details.css" />
   </head>
   <body>
     <!-- Header Start -->
@@ -317,8 +294,8 @@
             <!-- Header Right Side Actions -->
             <div class="d-flex gap-3 ms-3">
               <a class="text-danger" href="wishlist.html">
-            <i class="bi bi-heart-fill"></i>
-          </a>
+                <i class="bi bi-heart-fill"></i>
+              </a>
               <a href="cart.html"><i class="bi bi-cart"></i></a>
               <i class="bi bi-box-arrow-in-left"></i>
             </div>
@@ -354,34 +331,139 @@
     </header>
     <!-- Header End -->
 
-    <!-- Slider -->
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="w-100" src="https://placehold.co/900x300" alt="" />
+    <div class="container product-details-wr">
+      
+      <div class="row">
+        <div class="col">
+          
+          <div class="product-thumb-slider">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img class="w-100" src="https://placehold.co/900x300" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="w-100" src="https://placehold.co/900x300" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="w-100" src="https://placehold.co/900x300" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="w-100" src="https://placehold.co/900x300" alt="" />
-        </div>
+
+        <div class="col">  
+              <div class="full-product-card">
+                <div class="card mb-5">
+         
+                  <div class="card-body2">
+                    <img
+                    class="mb-2 w-100"
+                    src="https://placehold.co/100x80"
+                    alt="Title"
+                  />
+                    <h4 class="card-title mb-3 text-truncate">
+                      Noise Icon 2 Elite Edition 1.8'' Display with Metallic Body
+                      and Bluetooth Calling Smartwatch (Elite Black Strap,
+                      Regular)
+                    </h4>
+                    <p class="card-text">5,71,913 Ratings & 34,110 Reviews</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim cumque ipsam aspernatur, voluptatibus pariatur, dicta ut nemo illo accusantium magni commodi a quod numquam vitae? Culpa ad nulla magni ab.</p>
+                    <p
+                      class="fs-5 fw-bold d-flex gap-2 align-items-center flex-wrap"
+                    >
+                      <span>₹1,299</span
+                      ><span class="fw-medium text-body-tertiary">₹6,999</span
+                      ><span class="text-success fs-4">81% off</span>
+                    </p>
+        
+                    <p class="text-center">
+                      <a
+                        href="cart.html"
+                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6"
+                      >
+                        <i class="bi bi-cart me-2"></i> Add to cart
+                      </a>
+                      <a
+                      href="cart.html"
+                      class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6"
+                    >
+                      <i class="bi bi-cart me-2"></i>Buy Now
+                    </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
       </div>
-      <div class="swiper-pagination"></div>
+        
+      </div>
+        
+       
     </div>
 
     <section class="py-5">
       <div class="container">
         <h2 class="mb-5">
           <span class="text-primary border-bottom border-primary border-3 pb-2"
-            >Recent</span
+            >Related</span
           >
           Products
         </h2>
@@ -523,235 +605,6 @@
       </div>
     </section>
 
-    <section class="py-5">
-      <div class="container">
-        <h2 class="mb-5">
-          <span class="text-primary border-bottom border-primary border-3 pb-2"
-            >Top</span
-          >
-          Categories
-        </h2>
-
-        <div class="product-listing">
-          <div class="row">
-            <div class="col col-sm-6 col-md-4 col-lg">
-              <div
-                class="card border-primary mb-5 text-center position-relative"
-              >
-                <a
-                  class="position-absolute top-0 end-0 bottom-0 start-0 opacity-0"
-                  href="product-listing.html?category=Electronics"
-                  >Explore</a
-                >
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      class="mb-2"
-                      width="40"
-                      height="40"
-                      src="https://placehold.co/40x40"
-                      alt="Title"
-                    />
-                  </div>
-                  <p class="card-text">Electronics</p>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 col-lg">
-              <div
-                class="card border-primary mb-5 text-center position-relative"
-              >
-                <a
-                  class="position-absolute top-0 end-0 bottom-0 start-0 opacity-0"
-                  href="product-listing.html?category=Mobiles"
-                  >Explore</a
-                >
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      class="mb-2"
-                      width="40"
-                      height="40"
-                      src="https://placehold.co/40x40"
-                      alt="Title"
-                    />
-                  </div>
-                  <p class="card-text">Mobiles</p>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 col-lg">
-              <div
-                class="card border-primary mb-5 text-center position-relative"
-              >
-                <a
-                  class="position-absolute top-0 end-0 bottom-0 start-0 opacity-0"
-                  href="product-listing.html"
-                  >Explore</a
-                >
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      class="mb-2"
-                      width="40"
-                      height="40"
-                      src="https://placehold.co/40x40"
-                      alt="Title"
-                    />
-                  </div>
-                  <p class="card-text">Electronics</p>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 col-lg">
-              <div
-                class="card border-primary mb-5 text-center position-relative"
-              >
-                <a
-                  class="position-absolute top-0 end-0 bottom-0 start-0 opacity-0"
-                  href="product-listing.html"
-                  >Explore</a
-                >
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      class="mb-2"
-                      width="40"
-                      height="40"
-                      src="https://placehold.co/40x40"
-                      alt="Title"
-                    />
-                  </div>
-                  <p class="card-text">Electronics</p>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 col-lg">
-              <div
-                class="card border-primary mb-5 text-center position-relative"
-              >
-                <a
-                  class="position-absolute top-0 start-0 end-0 bottom-0 d-inline-block bg-warning opacity-0"
-                  href="product-listing.html"
-                  >Explore</a
-                >
-                <div class="card-body">
-                  <div class="text-center">
-                    <img
-                      class="mb-2"
-                      width="40"
-                      height="40"
-                      src="https://placehold.co/40x40"
-                      alt="Title"
-                    />
-                  </div>
-                  <p class="card-text">Electronics</p>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 col-lg">
-              <div
-                class="card border-primary mb-5 text-center position-relative"
-              >
-                <!-- <a
-                  class="position-absolute top-0 end-0 bottom-0 start-0 opacity-0"
-                  href="product-listing.html"
-                  >Explore</a
-                > -->
-                <div class="card-body">
-                  <div class="text-center">
-                    <a href="contact.html">
-                      <img
-                        class="mb-2"
-                        width="40"
-                        height="40"
-                        src="https://placehold.co/40x40"
-                        alt="Title"
-                      />
-                    </a>
-                  </div>
-                  <p class="card-text"><a href="contact.html">Test Cate</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <div class="container">
-    <div class="row">
-      <div class="col-20 col col-sm-6 col-md-4">
-        <div
-        class="card border-primary mb-5"
-      >
-        <img class="card-img-top mb-2" src="https://placehold.co/100x80" alt="Title" />
-        <div class="card-body">
-          <h4 class="card-title mb-3 text-truncate">Noise Icon 2 Elite Edition 1.8'' Display with Metallic Body and Bluetooth Calling Smartwatch  (Elite Black Strap, Regular)</h4>
-          <p class="card-text">5,71,913 Ratings & 34,110 Reviews</p>
-          <p class="fs-5 fw-bold d-flex gap-2 align-items-center flex-wrap"><span>₹1,299</span><span class="fw-medium text-body-tertiary">₹6,999</span><span class="text-success fs-4">81% off</span></p>
-          <button class="px-4 mx-auto btn btn-primary btn-lg rounded-0 d-flex align-items-center fs-6"><i class="bi bi-cart me-2"></i> Add to cart</button>
-        </div>
-      </div>
-      </div>
-      <div class="col-20 col col-sm-6 col-md-4">
-        <div
-        class="card border-primary mb-5"
-      >
-        <img class="card-img-top mb-2" src="https://placehold.co/100x80" alt="Title" />
-        <div class="card-body">
-          <h4 class="card-title mb-3 text-truncate">Noise Icon 2 Elite Edition 1.8'' Display with Metallic Body and Bluetooth Calling Smartwatch  (Elite Black Strap, Regular)</h4>
-          <p class="card-text">5,71,913 Ratings & 34,110 Reviews</p>
-          <p class="fs-5 fw-bold d-flex gap-2 align-items-center flex-wrap"><span>₹1,299</span><span class="fw-medium text-body-tertiary">₹6,999</span><span class="text-success fs-4">81% off</span></p>
-          <button class="px-4 mx-auto btn btn-primary btn-lg rounded-0 d-flex align-items-center fs-6"><i class="bi bi-cart me-2"></i> Add to cart</button>
-        </div>
-      </div>
-      </div>
-      <div class="col-20 col col-sm-6 col-md-4">
-        <div
-        class="card border-primary mb-5"
-      >
-        <img class="card-img-top mb-2" src="https://placehold.co/100x80" alt="Title" />
-        <div class="card-body">
-          <h4 class="card-title mb-3 text-truncate">Noise Icon 2 Elite Edition 1.8'' Display with Metallic Body and Bluetooth Calling Smartwatch  (Elite Black Strap, Regular)</h4>
-          <p class="card-text">5,71,913 Ratings & 34,110 Reviews</p>
-          <p class="fs-5 fw-bold d-flex gap-2 align-items-center flex-wrap"><span>₹1,299</span><span class="fw-medium text-body-tertiary">₹6,999</span><span class="text-success fs-4">81% off</span></p>
-          <button class="px-4 mx-auto btn btn-primary btn-lg rounded-0 d-flex align-items-center fs-6"><i class="bi bi-cart me-2"></i> Add to cart</button>
-        </div>
-      </div>
-      </div>
-      <div class="col-20 col col-sm-6 col-md-4">
-        <div
-        class="card border-primary mb-5"
-      >
-        <img class="card-img-top mb-2" src="https://placehold.co/100x80" alt="Title" />
-        <div class="card-body">
-          <h4 class="card-title mb-3 text-truncate">Noise Icon 2 Elite Edition 1.8'' Display with Metallic Body and Bluetooth Calling Smartwatch  (Elite Black Strap, Regular)</h4>
-          <p class="card-text">5,71,913 Ratings & 34,110 Reviews</p>
-          <p class="fs-5 fw-bold d-flex gap-2 align-items-center flex-wrap"><span>₹1,299</span><span class="fw-medium text-body-tertiary">₹6,999</span><span class="text-success fs-4">81% off</span></p>
-          <button class="px-4 mx-auto btn btn-primary btn-lg rounded-0 d-flex align-items-center fs-6"><i class="bi bi-cart me-2"></i> Add to cart</button>
-        </div>
-      </div>
-      </div>
-      <div class="col-20 col col-sm-6 col-md-4">
-        <div
-        class="card border-primary mb-5"
-      >
-        <img class="card-img-top mb-2" src="https://placehold.co/100x80" alt="Title" />
-        <div class="card-body">
-          <h4 class="card-title mb-3 text-truncate">Noise Icon 2 Elite Edition 1.8'' Display with Metallic Body and Bluetooth Calling Smartwatch  (Elite Black Strap, Regular)</h4>
-          <p class="card-text">5,71,913 Ratings & 34,110 Reviews</p>
-          <p class="fs-5 fw-bold d-flex gap-2 align-items-center flex-wrap"><span>₹1,299</span><span class="fw-medium text-body-tertiary">₹6,999</span><span class="text-success fs-4">81% off</span></p>
-          <button class="px-4 mx-auto btn btn-primary btn-lg rounded-0 d-flex align-items-center fs-6"><i class="bi bi-cart me-2"></i> Add to cart</button>
-        </div>
-      </div>
-      </div>
- 
-    </div>
-   </div> -->
-
-    <div class="container"></div>
-
     <footer
       class="bg-body-tertiary start-0 end-0 bg-white pb-3 pt-5 px-3 text-start border-top"
     >
@@ -762,8 +615,8 @@
               <div class="pb-4">
                 <h5 class="fs-5 mb-4">About Company</h5>
                 <a href="index.html">
-        <img class="mb-3" src="./assets/images/app-logo.svg" alt="" />
-          </a>
+                  <img class="mb-3" src="./assets/images/app-logo.svg" alt="" />
+                </a>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                   ad ipsa, nesciunt optio aut repellendus assumenda at provident
@@ -954,14 +807,24 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-      });
-    </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
   </body>
 </html>

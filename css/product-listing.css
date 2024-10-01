@@ -1,0 +1,86 @@
+.filter-wr-styles {
+    width: 300px;
+}
+
+.right-products-list {
+    max-width: calc(100vw - 300px);
+}
+
+.card-row-style .card-text3{
+    max-width: 50%;
+}
+
+.card-row-style .add-to-cart-btn {
+    min-width: 155px;
+}
+
+.left-filters-wr {
+    margin-top: 6px;
+}
+
+.filter-cards {
+    border:unset;
+    padding: 0 0 20px 30px;
+}
+
+.filter-cards  .card-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.filter-cards .card-text {
+    margin-bottom: 10px;
+}
+
+.filter-cards .card-text:hover {
+    color: #f67171;
+    cursor: pointer;
+}
+
+.filter-cards .card-text i {
+    border: 2px solid #ccc;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px; 
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.filter-cards .card-text.active  i,
+.filter-cards .card-text.checked  i {
+    border-color: #f67171;
+    color: #f67171;
+}
+
+/* First Card Top Padding */
+.filter-wr-styles .filter-cards:first-child {
+    padding-top: 30px;
+}
+
+.color-filter-card .card-text {
+    width: 50px;
+    height: 50px;
+    padding: 0 !important;
+    text-align: center;
+    font-size: 10px; 
+}
+
+.color-filter-card .card-text:nth-child(1) {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.color-filter-card .card-text:nth-child(2) {
+    color: white;
+    background-color: green;
+    border-color: green;
+}
+
+.color-filter-card .card-text:nth-child(3) {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
